@@ -1,0 +1,516 @@
+# Reading pref.tcl
+# do cpu_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/rojo/Documents/Quartus/LA5/src {C:/Users/rojo/Documents/Quartus/LA5/src/zero_extend_half.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:31:39 on Apr 12,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/rojo/Documents/Quartus/LA5/src" C:/Users/rojo/Documents/Quartus/LA5/src/zero_extend_half.v 
+# -- Compiling module ZeroExtendHalf
+# 
+# Top level modules:
+# 	ZeroExtendHalf
+# End time: 00:31:39 on Apr 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/rojo/Documents/Quartus/LA5/src {C:/Users/rojo/Documents/Quartus/LA5/src/zero_extend_byte.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:31:39 on Apr 12,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/rojo/Documents/Quartus/LA5/src" C:/Users/rojo/Documents/Quartus/LA5/src/zero_extend_byte.v 
+# -- Compiling module ZeroExtendByte
+# 
+# Top level modules:
+# 	ZeroExtendByte
+# End time: 00:31:40 on Apr 12,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/rojo/Documents/Quartus/LA5/src {C:/Users/rojo/Documents/Quartus/LA5/src/write_data.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:31:40 on Apr 12,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/rojo/Documents/Quartus/LA5/src" C:/Users/rojo/Documents/Quartus/LA5/src/write_data.v 
+# -- Compiling module WriteData
+# 
+# Top level modules:
+# 	WriteData
+# End time: 00:31:40 on Apr 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/rojo/Documents/Quartus/LA5/src {C:/Users/rojo/Documents/Quartus/LA5/src/store_type.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:31:40 on Apr 12,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/rojo/Documents/Quartus/LA5/src" C:/Users/rojo/Documents/Quartus/LA5/src/store_type.v 
+# -- Compiling module StoreType
+# 
+# Top level modules:
+# 	StoreType
+# End time: 00:31:40 on Apr 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/rojo/Documents/Quartus/LA5/src {C:/Users/rojo/Documents/Quartus/LA5/src/sign_extend_half.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:31:40 on Apr 12,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/rojo/Documents/Quartus/LA5/src" C:/Users/rojo/Documents/Quartus/LA5/src/sign_extend_half.v 
+# -- Compiling module SignExtendHalf
+# 
+# Top level modules:
+# 	SignExtendHalf
+# End time: 00:31:40 on Apr 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/rojo/Documents/Quartus/LA5/src {C:/Users/rojo/Documents/Quartus/LA5/src/sign_extend_byte.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:31:40 on Apr 12,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/rojo/Documents/Quartus/LA5/src" C:/Users/rojo/Documents/Quartus/LA5/src/sign_extend_byte.v 
+# -- Compiling module SignExtendByte
+# 
+# Top level modules:
+# 	SignExtendByte
+# End time: 00:31:40 on Apr 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/rojo/Documents/Quartus/LA5/src {C:/Users/rojo/Documents/Quartus/LA5/src/register_n.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:31:40 on Apr 12,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/rojo/Documents/Quartus/LA5/src" C:/Users/rojo/Documents/Quartus/LA5/src/register_n.v 
+# -- Compiling module register_n
+# 
+# Top level modules:
+# 	register_n
+# End time: 00:31:40 on Apr 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/rojo/Documents/Quartus/LA5/src {C:/Users/rojo/Documents/Quartus/LA5/src/register_file.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:31:40 on Apr 12,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/rojo/Documents/Quartus/LA5/src" C:/Users/rojo/Documents/Quartus/LA5/src/register_file.v 
+# -- Compiling module register_file
+# 
+# Top level modules:
+# 	register_file
+# End time: 00:31:40 on Apr 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/rojo/Documents/Quartus/LA5/src {C:/Users/rojo/Documents/Quartus/LA5/src/read_data.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:31:40 on Apr 12,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/rojo/Documents/Quartus/LA5/src" C:/Users/rojo/Documents/Quartus/LA5/src/read_data.v 
+# -- Compiling module ReadData
+# 
+# Top level modules:
+# 	ReadData
+# End time: 00:31:40 on Apr 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/rojo/Documents/Quartus/LA5/src {C:/Users/rojo/Documents/Quartus/LA5/src/mux4.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:31:41 on Apr 12,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/rojo/Documents/Quartus/LA5/src" C:/Users/rojo/Documents/Quartus/LA5/src/mux4.v 
+# -- Compiling module mux4
+# 
+# Top level modules:
+# 	mux4
+# End time: 00:31:41 on Apr 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/rojo/Documents/Quartus/LA5/src {C:/Users/rojo/Documents/Quartus/LA5/src/mux3.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:31:41 on Apr 12,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/rojo/Documents/Quartus/LA5/src" C:/Users/rojo/Documents/Quartus/LA5/src/mux3.v 
+# -- Compiling module mux3
+# 
+# Top level modules:
+# 	mux3
+# End time: 00:31:41 on Apr 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/rojo/Documents/Quartus/LA5/src {C:/Users/rojo/Documents/Quartus/LA5/src/mux2.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:31:41 on Apr 12,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/rojo/Documents/Quartus/LA5/src" C:/Users/rojo/Documents/Quartus/LA5/src/mux2.v 
+# -- Compiling module mux2
+# 
+# Top level modules:
+# 	mux2
+# End time: 00:31:41 on Apr 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/rojo/Documents/Quartus/LA5/src {C:/Users/rojo/Documents/Quartus/LA5/src/main_fsm.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:31:41 on Apr 12,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/rojo/Documents/Quartus/LA5/src" C:/Users/rojo/Documents/Quartus/LA5/src/main_fsm.v 
+# -- Compiling module main_fsm
+# 
+# Top level modules:
+# 	main_fsm
+# End time: 00:31:41 on Apr 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/rojo/Documents/Quartus/LA5/src {C:/Users/rojo/Documents/Quartus/LA5/src/load_type.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:31:41 on Apr 12,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/rojo/Documents/Quartus/LA5/src" C:/Users/rojo/Documents/Quartus/LA5/src/load_type.v 
+# -- Compiling module LoadType
+# 
+# Top level modules:
+# 	LoadType
+# End time: 00:31:41 on Apr 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/rojo/Documents/Quartus/LA5/src {C:/Users/rojo/Documents/Quartus/LA5/src/instruction_decoder.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:31:41 on Apr 12,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/rojo/Documents/Quartus/LA5/src" C:/Users/rojo/Documents/Quartus/LA5/src/instruction_decoder.v 
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# End time: 00:31:42 on Apr 12,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/rojo/Documents/Quartus/LA5/src {C:/Users/rojo/Documents/Quartus/LA5/src/imm_source_decode.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:31:42 on Apr 12,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/rojo/Documents/Quartus/LA5/src" C:/Users/rojo/Documents/Quartus/LA5/src/imm_source_decode.v 
+# -- Compiling module imm_source_decode
+# 
+# Top level modules:
+# 	imm_source_decode
+# End time: 00:31:42 on Apr 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/rojo/Documents/Quartus/LA5/src {C:/Users/rojo/Documents/Quartus/LA5/src/extend_immediate.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:31:42 on Apr 12,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/rojo/Documents/Quartus/LA5/src" C:/Users/rojo/Documents/Quartus/LA5/src/extend_immediate.v 
+# -- Compiling module extend_immediate
+# 
+# Top level modules:
+# 	extend_immediate
+# End time: 00:31:42 on Apr 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/rojo/Documents/Quartus/LA5/src {C:/Users/rojo/Documents/Quartus/LA5/src/datapath.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:31:42 on Apr 12,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/rojo/Documents/Quartus/LA5/src" C:/Users/rojo/Documents/Quartus/LA5/src/datapath.v 
+# -- Compiling module datapath
+# 
+# Top level modules:
+# 	datapath
+# End time: 00:31:42 on Apr 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/rojo/Documents/Quartus/LA5/src {C:/Users/rojo/Documents/Quartus/LA5/src/cpu.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:31:42 on Apr 12,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/rojo/Documents/Quartus/LA5/src" C:/Users/rojo/Documents/Quartus/LA5/src/cpu.v 
+# -- Compiling module cpu
+# 
+# Top level modules:
+# 	cpu
+# End time: 00:31:42 on Apr 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/rojo/Documents/Quartus/LA5/src {C:/Users/rojo/Documents/Quartus/LA5/src/counter.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:31:42 on Apr 12,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/rojo/Documents/Quartus/LA5/src" C:/Users/rojo/Documents/Quartus/LA5/src/counter.v 
+# -- Compiling module t_counter
+# 
+# Top level modules:
+# 	t_counter
+# End time: 00:31:42 on Apr 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/rojo/Documents/Quartus/LA5/src {C:/Users/rojo/Documents/Quartus/LA5/src/controller.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:31:42 on Apr 12,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/rojo/Documents/Quartus/LA5/src" C:/Users/rojo/Documents/Quartus/LA5/src/controller.v 
+# -- Compiling module controller
+# 
+# Top level modules:
+# 	controller
+# End time: 00:31:42 on Apr 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/rojo/Documents/Quartus/LA5/src {C:/Users/rojo/Documents/Quartus/LA5/src/control_signals_logic.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:31:42 on Apr 12,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/rojo/Documents/Quartus/LA5/src" C:/Users/rojo/Documents/Quartus/LA5/src/control_signals_logic.v 
+# -- Compiling module control_signals_logic
+# 
+# Top level modules:
+# 	control_signals_logic
+# End time: 00:31:42 on Apr 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/rojo/Documents/Quartus/LA5/src {C:/Users/rojo/Documents/Quartus/LA5/src/constant_32bit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:31:43 on Apr 12,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/rojo/Documents/Quartus/LA5/src" C:/Users/rojo/Documents/Quartus/LA5/src/constant_32bit.v 
+# -- Compiling module constant_32bit
+# 
+# Top level modules:
+# 	constant_32bit
+# End time: 00:31:43 on Apr 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/rojo/Documents/Quartus/LA5/src {C:/Users/rojo/Documents/Quartus/LA5/src/branch_unit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:31:43 on Apr 12,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/rojo/Documents/Quartus/LA5/src" C:/Users/rojo/Documents/Quartus/LA5/src/branch_unit.v 
+# -- Compiling module branch_unit
+# 
+# Top level modules:
+# 	branch_unit
+# End time: 00:31:43 on Apr 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/rojo/Documents/Quartus/LA5/src {C:/Users/rojo/Documents/Quartus/LA5/src/alu_decoder.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:31:43 on Apr 12,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/rojo/Documents/Quartus/LA5/src" C:/Users/rojo/Documents/Quartus/LA5/src/alu_decoder.v 
+# -- Compiling module alu_decoder
+# 
+# Top level modules:
+# 	alu_decoder
+# End time: 00:31:43 on Apr 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/rojo/Documents/Quartus/LA5/src {C:/Users/rojo/Documents/Quartus/LA5/src/alu.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:31:43 on Apr 12,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/rojo/Documents/Quartus/LA5/src" C:/Users/rojo/Documents/Quartus/LA5/src/alu.v 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 00:31:43 on Apr 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+do testbench.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:31:44 on Apr 12,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/rojo/Documents/Quartus/LA5/testbench" C:/Users/rojo/Documents/Quartus/LA5/testbench/reset_clock.v 
+# -- Compiling module reset_clock
+# 
+# Top level modules:
+# 	reset_clock
+# End time: 00:31:44 on Apr 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:31:44 on Apr 12,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/rojo/Documents/Quartus/LA5/testbench" C:/Users/rojo/Documents/Quartus/LA5/testbench/ROM_memory.v 
+# -- Compiling module ROM_memory
+# 
+# Top level modules:
+# 	ROM_memory
+# End time: 00:31:44 on Apr 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:31:44 on Apr 12,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/rojo/Documents/Quartus/LA5/testbench" C:/Users/rojo/Documents/Quartus/LA5/testbench/RAM_memory.v 
+# -- Compiling module RAM_memory
+# 
+# Top level modules:
+# 	RAM_memory
+# End time: 00:31:44 on Apr 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:31:44 on Apr 12,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/rojo/Documents/Quartus/LA5/testbench" C:/Users/rojo/Documents/Quartus/LA5/testbench/address_decoder.v 
+# -- Compiling module address_decoder
+# 
+# Top level modules:
+# 	address_decoder
+# End time: 00:31:44 on Apr 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:31:44 on Apr 12,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/rojo/Documents/Quartus/LA5/testbench" C:/Users/rojo/Documents/Quartus/LA5/testbench/RISCV_tb.v 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 00:31:44 on Apr 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim work.testbench 
+# Start time: 00:31:44 on Apr 12,2026
+# Loading work.testbench
+# Loading work.reset_clock
+# Loading work.cpu
+# Loading work.controller
+# Loading work.alu_decoder
+# Loading work.branch_unit
+# Loading work.imm_source_decode
+# Loading work.main_fsm
+# Loading work.control_signals_logic
+# Loading work.instruction_decoder
+# Loading work.t_counter
+# Loading work.LoadType
+# Loading work.StoreType
+# Loading work.datapath
+# Loading work.register_n
+# Loading work.alu
+# Loading work.mux3
+# Loading work.mux2
+# Loading work.extend_immediate
+# Loading work.constant_32bit
+# Loading work.register_file
+# Loading work.mux4
+# Loading work.ReadData
+# Loading work.ZeroExtendByte
+# Loading work.SignExtendByte
+# Loading work.ZeroExtendHalf
+# Loading work.SignExtendHalf
+# Loading work.WriteData
+# Loading work.address_decoder
+# Loading work.ROM_memory
+# Loading work.RAM_memory
+do testbench.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:32:46 on Apr 12,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/rojo/Documents/Quartus/LA5/testbench" C:/Users/rojo/Documents/Quartus/LA5/testbench/reset_clock.v 
+# -- Compiling module reset_clock
+# 
+# Top level modules:
+# 	reset_clock
+# End time: 00:32:47 on Apr 12,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:32:47 on Apr 12,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/rojo/Documents/Quartus/LA5/testbench" C:/Users/rojo/Documents/Quartus/LA5/testbench/ROM_memory.v 
+# -- Compiling module ROM_memory
+# 
+# Top level modules:
+# 	ROM_memory
+# End time: 00:32:47 on Apr 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:32:47 on Apr 12,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/rojo/Documents/Quartus/LA5/testbench" C:/Users/rojo/Documents/Quartus/LA5/testbench/RAM_memory.v 
+# -- Compiling module RAM_memory
+# 
+# Top level modules:
+# 	RAM_memory
+# End time: 00:32:47 on Apr 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:32:47 on Apr 12,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/rojo/Documents/Quartus/LA5/testbench" C:/Users/rojo/Documents/Quartus/LA5/testbench/address_decoder.v 
+# -- Compiling module address_decoder
+# 
+# Top level modules:
+# 	address_decoder
+# End time: 00:32:47 on Apr 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:32:47 on Apr 12,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/rojo/Documents/Quartus/LA5/testbench" C:/Users/rojo/Documents/Quartus/LA5/testbench/RISCV_tb.v 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 00:32:47 on Apr 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 00:32:48 on Apr 12,2026, Elapsed time: 0:01:04
+# Errors: 0, Warnings: 0
+# vsim work.testbench 
+# Start time: 00:32:48 on Apr 12,2026
+# Loading work.testbench
+# Loading work.reset_clock
+# Loading work.cpu
+# Loading work.controller
+# Loading work.alu_decoder
+# Loading work.branch_unit
+# Loading work.imm_source_decode
+# Loading work.main_fsm
+# Loading work.control_signals_logic
+# Loading work.instruction_decoder
+# Loading work.t_counter
+# Loading work.LoadType
+# Loading work.StoreType
+# Loading work.datapath
+# Loading work.register_n
+# Loading work.alu
+# Loading work.mux3
+# Loading work.mux2
+# Loading work.extend_immediate
+# Loading work.constant_32bit
+# Loading work.register_file
+# Loading work.mux4
+# Loading work.ReadData
+# Loading work.ZeroExtendByte
+# Loading work.SignExtendByte
+# Loading work.ZeroExtendHalf
+# Loading work.SignExtendHalf
+# Loading work.WriteData
+# Loading work.address_decoder
+# Loading work.ROM_memory
+# Loading work.RAM_memory
+do testbench.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:33:32 on Apr 12,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/rojo/Documents/Quartus/LA5/testbench" C:/Users/rojo/Documents/Quartus/LA5/testbench/reset_clock.v 
+# -- Compiling module reset_clock
+# 
+# Top level modules:
+# 	reset_clock
+# End time: 00:33:32 on Apr 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:33:32 on Apr 12,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/rojo/Documents/Quartus/LA5/testbench" C:/Users/rojo/Documents/Quartus/LA5/testbench/ROM_memory.v 
+# -- Compiling module ROM_memory
+# 
+# Top level modules:
+# 	ROM_memory
+# End time: 00:33:32 on Apr 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:33:32 on Apr 12,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/rojo/Documents/Quartus/LA5/testbench" C:/Users/rojo/Documents/Quartus/LA5/testbench/RAM_memory.v 
+# -- Compiling module RAM_memory
+# 
+# Top level modules:
+# 	RAM_memory
+# End time: 00:33:32 on Apr 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:33:32 on Apr 12,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/rojo/Documents/Quartus/LA5/testbench" C:/Users/rojo/Documents/Quartus/LA5/testbench/address_decoder.v 
+# -- Compiling module address_decoder
+# 
+# Top level modules:
+# 	address_decoder
+# End time: 00:33:33 on Apr 12,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:33:33 on Apr 12,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/rojo/Documents/Quartus/LA5/testbench" C:/Users/rojo/Documents/Quartus/LA5/testbench/RISCV_tb.v 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 00:33:33 on Apr 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 00:33:34 on Apr 12,2026, Elapsed time: 0:00:46
+# Errors: 0, Warnings: 0
+# vsim work.testbench 
+# Start time: 00:33:34 on Apr 12,2026
+# Loading work.testbench
+# Loading work.reset_clock
+# Loading work.cpu
+# Loading work.controller
+# Loading work.alu_decoder
+# Loading work.branch_unit
+# Loading work.imm_source_decode
+# Loading work.main_fsm
+# Loading work.control_signals_logic
+# Loading work.instruction_decoder
+# Loading work.t_counter
+# Loading work.LoadType
+# Loading work.StoreType
+# Loading work.datapath
+# Loading work.register_n
+# Loading work.alu
+# Loading work.mux3
+# Loading work.mux2
+# Loading work.extend_immediate
+# Loading work.constant_32bit
+# Loading work.register_file
+# Loading work.mux4
+# Loading work.ReadData
+# Loading work.ZeroExtendByte
+# Loading work.SignExtendByte
+# Loading work.ZeroExtendHalf
+# Loading work.SignExtendHalf
+# Loading work.WriteData
+# Loading work.address_decoder
+# Loading work.ROM_memory
+# Loading work.RAM_memory
+# End time: 00:39:27 on Apr 12,2026, Elapsed time: 0:05:53
+# Errors: 0, Warnings: 0

@@ -1,0 +1,765 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/rojo/Documents/Quartus/LA5/simulation/modelsim
+vaddress_decoder
+Z1 !s110 1775968413
+!i10b 1
+!s100 UFzYoAE6SV:7`mL[Rf?X52
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I=UbKaVeig0i3^FK3:4VDM2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1771429746
+8C:/Users/rojo/Documents/Quartus/LA5/testbench/address_decoder.v
+FC:/Users/rojo/Documents/Quartus/LA5/testbench/address_decoder.v
+!i122 39
+Z4 L0 1 13
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1775968412.000000
+!s107 C:/Users/rojo/Documents/Quartus/LA5/testbench/address_decoder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/rojo/Documents/Quartus/LA5/testbench|C:/Users/rojo/Documents/Quartus/LA5/testbench/address_decoder.v|
+!i113 1
+Z7 o-vlog01compat -work work
+Z8 !s92 -vlog01compat -work work +incdir+C:/Users/rojo/Documents/Quartus/LA5/testbench
+Z9 tCvgOpt 0
+valu
+Z10 !s110 1775968303
+!i10b 1
+!s100 zZh3SlJd5LmC8C_VBhWD21
+R2
+ITM]6;1Qm5I_i7J8Tom@7M2
+R3
+R0
+w1773667691
+8C:/Users/rojo/Documents/Quartus/LA5/src/alu.v
+FC:/Users/rojo/Documents/Quartus/LA5/src/alu.v
+!i122 25
+L0 1 42
+R5
+r1
+!s85 0
+31
+Z11 !s108 1775968303.000000
+!s107 C:/Users/rojo/Documents/Quartus/LA5/src/alu.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/rojo/Documents/Quartus/LA5/src|C:/Users/rojo/Documents/Quartus/LA5/src/alu.v|
+!i113 1
+R7
+Z12 !s92 -vlog01compat -work work +incdir+C:/Users/rojo/Documents/Quartus/LA5/src
+R9
+valu_decoder
+R10
+!i10b 1
+!s100 :;OIQMmQ_0S]`b8;U63hg3
+R2
+IOdHVA<dczlAhn:I9;0OTB1
+R3
+R0
+w1773622801
+8C:/Users/rojo/Documents/Quartus/LA5/src/alu_decoder.v
+FC:/Users/rojo/Documents/Quartus/LA5/src/alu_decoder.v
+!i122 24
+L0 1 21
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/rojo/Documents/Quartus/LA5/src/alu_decoder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/rojo/Documents/Quartus/LA5/src|C:/Users/rojo/Documents/Quartus/LA5/src/alu_decoder.v|
+!i113 1
+R7
+R12
+R9
+vbranch_unit
+R10
+!i10b 1
+!s100 eRW@a[WM]hL3OzYQKIeNQ1
+R2
+Im[NCWT0=e^bIR_SoKaD600
+R3
+R0
+w1773671602
+8C:/Users/rojo/Documents/Quartus/LA5/src/branch_unit.v
+FC:/Users/rojo/Documents/Quartus/LA5/src/branch_unit.v
+!i122 23
+L0 1 18
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/rojo/Documents/Quartus/LA5/src/branch_unit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/rojo/Documents/Quartus/LA5/src|C:/Users/rojo/Documents/Quartus/LA5/src/branch_unit.v|
+!i113 1
+R7
+R12
+R9
+vconstant_32bit
+R10
+!i10b 1
+!s100 V[Fn^JVklEzieaH9MOze`3
+R2
+IKF`2^8d]3M[9QmcOkA7I00
+R3
+R0
+w1772026157
+8C:/Users/rojo/Documents/Quartus/LA5/src/constant_32bit.v
+FC:/Users/rojo/Documents/Quartus/LA5/src/constant_32bit.v
+!i122 22
+L0 1 8
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/rojo/Documents/Quartus/LA5/src/constant_32bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/rojo/Documents/Quartus/LA5/src|C:/Users/rojo/Documents/Quartus/LA5/src/constant_32bit.v|
+!i113 1
+R7
+R12
+R9
+vcontrol_signals_logic
+Z13 !s110 1775968302
+!i10b 1
+!s100 o^>>o?GL>eUleZPWLaA4e1
+R2
+IeNLGS4a_hKMiOSO>L2gMk1
+R3
+R0
+w1775968226
+8C:/Users/rojo/Documents/Quartus/LA5/src/control_signals_logic.v
+FC:/Users/rojo/Documents/Quartus/LA5/src/control_signals_logic.v
+!i122 21
+L0 1 45
+R5
+r1
+!s85 0
+31
+Z14 !s108 1775968302.000000
+!s107 C:/Users/rojo/Documents/Quartus/LA5/src/control_signals_logic.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/rojo/Documents/Quartus/LA5/src|C:/Users/rojo/Documents/Quartus/LA5/src/control_signals_logic.v|
+!i113 1
+R7
+R12
+R9
+vcontroller
+R13
+!i10b 1
+!s100 O[7fNQ?a^fzV;`gg_MWM22
+R2
+IhO?4djGhJMVC7_M<^eU4S3
+R3
+R0
+w1773689687
+8C:/Users/rojo/Documents/Quartus/LA5/src/controller.v
+FC:/Users/rojo/Documents/Quartus/LA5/src/controller.v
+!i122 20
+L0 1 75
+R5
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/rojo/Documents/Quartus/LA5/src/controller.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/rojo/Documents/Quartus/LA5/src|C:/Users/rojo/Documents/Quartus/LA5/src/controller.v|
+!i113 1
+R7
+R12
+R9
+vcpu
+R13
+!i10b 1
+!s100 FT<ISMOTe0gi?m:bBl=V22
+R2
+Ik^`lXD0_M<jL9TF?>CE^G1
+R3
+R0
+w1773616828
+8C:/Users/rojo/Documents/Quartus/LA5/src/cpu.v
+FC:/Users/rojo/Documents/Quartus/LA5/src/cpu.v
+!i122 18
+L0 1 67
+R5
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/rojo/Documents/Quartus/LA5/src/cpu.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/rojo/Documents/Quartus/LA5/src|C:/Users/rojo/Documents/Quartus/LA5/src/cpu.v|
+!i113 1
+R7
+R12
+R9
+vdatapath
+R13
+!i10b 1
+!s100 c^_jV<ej1dlS>KE<R8k_U2
+R2
+IP2XHhY1d0kFXSIakklYU@0
+R3
+R0
+w1773669513
+8C:/Users/rojo/Documents/Quartus/LA5/src/datapath.v
+FC:/Users/rojo/Documents/Quartus/LA5/src/datapath.v
+!i122 17
+L0 1 192
+R5
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/rojo/Documents/Quartus/LA5/src/datapath.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/rojo/Documents/Quartus/LA5/src|C:/Users/rojo/Documents/Quartus/LA5/src/datapath.v|
+!i113 1
+R7
+R12
+R9
+vextend_immediate
+R13
+!i10b 1
+!s100 ?7I:M:78@lb2Ea2L5>W8^2
+R2
+IVODM`gU?0VCY_<Qn00Qe22
+R3
+R0
+w1769796425
+8C:/Users/rojo/Documents/Quartus/LA5/src/extend_immediate.v
+FC:/Users/rojo/Documents/Quartus/LA5/src/extend_immediate.v
+!i122 16
+L0 1 24
+R5
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/rojo/Documents/Quartus/LA5/src/extend_immediate.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/rojo/Documents/Quartus/LA5/src|C:/Users/rojo/Documents/Quartus/LA5/src/extend_immediate.v|
+!i113 1
+R7
+R12
+R9
+vimm_source_decode
+R13
+!i10b 1
+!s100 GXb5^OG_43G_ejf6Qi[?d2
+R2
+Im8bKTQ2YQRKIEC@AeJYLh3
+R3
+R0
+w1773669514
+8C:/Users/rojo/Documents/Quartus/LA5/src/imm_source_decode.v
+FC:/Users/rojo/Documents/Quartus/LA5/src/imm_source_decode.v
+!i122 15
+Z15 L0 1 10
+R5
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/rojo/Documents/Quartus/LA5/src/imm_source_decode.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/rojo/Documents/Quartus/LA5/src|C:/Users/rojo/Documents/Quartus/LA5/src/imm_source_decode.v|
+!i113 1
+R7
+R12
+R9
+vinstruction_decoder
+Z16 !s110 1775968301
+!i10b 1
+!s100 jG1E]YA28zG`g6RekXJV>1
+R2
+I13k1Xm2FnjEXP4g7En6h83
+R3
+R0
+Z17 w1773689686
+8C:/Users/rojo/Documents/Quartus/LA5/src/instruction_decoder.v
+FC:/Users/rojo/Documents/Quartus/LA5/src/instruction_decoder.v
+!i122 14
+Z18 L0 1 26
+R5
+r1
+!s85 0
+31
+Z19 !s108 1775968301.000000
+!s107 C:/Users/rojo/Documents/Quartus/LA5/src/instruction_decoder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/rojo/Documents/Quartus/LA5/src|C:/Users/rojo/Documents/Quartus/LA5/src/instruction_decoder.v|
+!i113 1
+R7
+R12
+R9
+vLoadType
+R16
+!i10b 1
+!s100 mYE8Ml>CMd:=hl3aJ85g=2
+R2
+IknmR]_mLm0GII1iG_MF:`0
+R3
+R0
+w1773245620
+8C:/Users/rojo/Documents/Quartus/LA5/src/load_type.v
+FC:/Users/rojo/Documents/Quartus/LA5/src/load_type.v
+!i122 13
+R4
+R5
+r1
+!s85 0
+31
+R19
+!s107 C:/Users/rojo/Documents/Quartus/LA5/src/load_type.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/rojo/Documents/Quartus/LA5/src|C:/Users/rojo/Documents/Quartus/LA5/src/load_type.v|
+!i113 1
+R7
+R12
+R9
+n@load@type
+vmain_fsm
+R16
+!i10b 1
+!s100 1?RJk3l?UC[ah91@RV2D13
+R2
+I;WR]RcNEa??Nb;Y^Ym2`k2
+R3
+R0
+R17
+8C:/Users/rojo/Documents/Quartus/LA5/src/main_fsm.v
+FC:/Users/rojo/Documents/Quartus/LA5/src/main_fsm.v
+!i122 12
+L0 1 100
+R5
+r1
+!s85 0
+31
+R19
+!s107 C:/Users/rojo/Documents/Quartus/LA5/src/main_fsm.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/rojo/Documents/Quartus/LA5/src|C:/Users/rojo/Documents/Quartus/LA5/src/main_fsm.v|
+!i113 1
+R7
+R12
+R9
+vmux2
+R16
+!i10b 1
+!s100 5@fEFY9TaN4WUWGSiC9OC1
+R2
+IE4XQMe_nDC5I`lz:T?eh>3
+R3
+R0
+w1772034398
+8C:/Users/rojo/Documents/Quartus/LA5/src/mux2.v
+FC:/Users/rojo/Documents/Quartus/LA5/src/mux2.v
+!i122 11
+R15
+R5
+r1
+!s85 0
+31
+R19
+!s107 C:/Users/rojo/Documents/Quartus/LA5/src/mux2.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/rojo/Documents/Quartus/LA5/src|C:/Users/rojo/Documents/Quartus/LA5/src/mux2.v|
+!i113 1
+R7
+R12
+R9
+vmux3
+R16
+!i10b 1
+!s100 lHWgHefJ=JaoeIfjL@k481
+R2
+IM`N_g4g3RI<P4Jn;68m>81
+R3
+R0
+w1769197915
+8C:/Users/rojo/Documents/Quartus/LA5/src/mux3.v
+FC:/Users/rojo/Documents/Quartus/LA5/src/mux3.v
+!i122 10
+L0 1 15
+R5
+r1
+!s85 0
+31
+R19
+!s107 C:/Users/rojo/Documents/Quartus/LA5/src/mux3.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/rojo/Documents/Quartus/LA5/src|C:/Users/rojo/Documents/Quartus/LA5/src/mux3.v|
+!i113 1
+R7
+R12
+R9
+vmux4
+R16
+!i10b 1
+!s100 @LoTInblTfQB0nm?`[lPi2
+R2
+IHPkO0ca;?1cjMAbUX>9Xe1
+R3
+R0
+w1773250371
+8C:/Users/rojo/Documents/Quartus/LA5/src/mux4.v
+FC:/Users/rojo/Documents/Quartus/LA5/src/mux4.v
+!i122 9
+L0 1 16
+R5
+r1
+!s85 0
+31
+R19
+!s107 C:/Users/rojo/Documents/Quartus/LA5/src/mux4.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/rojo/Documents/Quartus/LA5/src|C:/Users/rojo/Documents/Quartus/LA5/src/mux4.v|
+!i113 1
+R7
+R12
+R9
+vRAM_memory
+Z20 !s110 1775968412
+!i10b 1
+!s100 z4Rg=7z<g4hbS1ZaGUcG>3
+R2
+I^b6[aQ2O>T9KObj9=hJzj3
+R3
+R0
+w1772026309
+8C:/Users/rojo/Documents/Quartus/LA5/testbench/RAM_memory.v
+FC:/Users/rojo/Documents/Quartus/LA5/testbench/RAM_memory.v
+!i122 38
+L0 1 50
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/rojo/Documents/Quartus/LA5/testbench/RAM_memory.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/rojo/Documents/Quartus/LA5/testbench|C:/Users/rojo/Documents/Quartus/LA5/testbench/RAM_memory.v|
+!i113 1
+R7
+R8
+R9
+n@r@a@m_memory
+vReadData
+Z21 !s110 1775968300
+!i10b 1
+!s100 LF`OCd9[oc;mFdVWi<KeC1
+R2
+IDVAXZf:;aKc>MBWKEfd_b3
+R3
+R0
+w1773250742
+8C:/Users/rojo/Documents/Quartus/LA5/src/read_data.v
+FC:/Users/rojo/Documents/Quartus/LA5/src/read_data.v
+!i122 8
+L0 1 85
+R5
+r1
+!s85 0
+31
+Z22 !s108 1775968300.000000
+!s107 C:/Users/rojo/Documents/Quartus/LA5/src/read_data.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/rojo/Documents/Quartus/LA5/src|C:/Users/rojo/Documents/Quartus/LA5/src/read_data.v|
+!i113 1
+R7
+R12
+R9
+n@read@data
+vregister_file
+R21
+!i10b 1
+!s100 `AGC71jc@IS;?>E6XUoQ=2
+R2
+IoF0bT>AAcjVVG6JTBfLBn2
+R3
+R0
+w1772036527
+8C:/Users/rojo/Documents/Quartus/LA5/src/register_file.v
+FC:/Users/rojo/Documents/Quartus/LA5/src/register_file.v
+!i122 7
+L0 1 57
+R5
+r1
+!s85 0
+31
+R22
+!s107 C:/Users/rojo/Documents/Quartus/LA5/src/register_file.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/rojo/Documents/Quartus/LA5/src|C:/Users/rojo/Documents/Quartus/LA5/src/register_file.v|
+!i113 1
+R7
+R12
+R9
+vregister_n
+R21
+!i10b 1
+!s100 1TK=LVG]iS1LnHVAj1i4b0
+R2
+I1`XAW?jB1HM1<8geRg9Q@2
+R3
+R0
+w1772036990
+8C:/Users/rojo/Documents/Quartus/LA5/src/register_n.v
+FC:/Users/rojo/Documents/Quartus/LA5/src/register_n.v
+!i122 6
+R18
+R5
+r1
+!s85 0
+31
+R22
+!s107 C:/Users/rojo/Documents/Quartus/LA5/src/register_n.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/rojo/Documents/Quartus/LA5/src|C:/Users/rojo/Documents/Quartus/LA5/src/register_n.v|
+!i113 1
+R7
+R12
+R9
+vreset_clock
+R20
+!i10b 1
+!s100 jSKZ0WiTHC=S3fUPIM74g0
+R2
+I=T7Lg;K_RPJI?f]5;XIA>3
+R3
+R0
+w1772026310
+8C:/Users/rojo/Documents/Quartus/LA5/testbench/reset_clock.v
+FC:/Users/rojo/Documents/Quartus/LA5/testbench/reset_clock.v
+!i122 36
+L0 3 24
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/rojo/Documents/Quartus/LA5/testbench/reset_clock.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/rojo/Documents/Quartus/LA5/testbench|C:/Users/rojo/Documents/Quartus/LA5/testbench/reset_clock.v|
+!i113 1
+R7
+R8
+R9
+vROM_memory
+R20
+!i10b 1
+!s100 3CH1DfAgmc9FlK3__`bLd1
+R2
+I?YbV]A4F1DNik<cYoKfCi3
+R3
+R0
+w1772026307
+8C:/Users/rojo/Documents/Quartus/LA5/testbench/ROM_memory.v
+FC:/Users/rojo/Documents/Quartus/LA5/testbench/ROM_memory.v
+!i122 37
+R18
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/rojo/Documents/Quartus/LA5/testbench/ROM_memory.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/rojo/Documents/Quartus/LA5/testbench|C:/Users/rojo/Documents/Quartus/LA5/testbench/ROM_memory.v|
+!i113 1
+R7
+R8
+R9
+n@r@o@m_memory
+vSignExtendByte
+R21
+!i10b 1
+!s100 5=W;=9L[a[>AAERCVI9Za0
+R2
+I0KQXzWA9@`aRKDTH80Hjn3
+R3
+R0
+w1773261057
+8C:/Users/rojo/Documents/Quartus/LA5/src/sign_extend_byte.v
+FC:/Users/rojo/Documents/Quartus/LA5/src/sign_extend_byte.v
+!i122 5
+Z23 L0 1 9
+R5
+r1
+!s85 0
+31
+R22
+!s107 C:/Users/rojo/Documents/Quartus/LA5/src/sign_extend_byte.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/rojo/Documents/Quartus/LA5/src|C:/Users/rojo/Documents/Quartus/LA5/src/sign_extend_byte.v|
+!i113 1
+R7
+R12
+R9
+n@sign@extend@byte
+vSignExtendHalf
+R21
+!i10b 1
+!s100 ;RjYA`bn9Ehnh=HljO?5X0
+R2
+I>JJJjFhoVIjUJ@JRkc00n3
+R3
+R0
+w1773261036
+8C:/Users/rojo/Documents/Quartus/LA5/src/sign_extend_half.v
+FC:/Users/rojo/Documents/Quartus/LA5/src/sign_extend_half.v
+!i122 4
+R23
+R5
+r1
+!s85 0
+31
+R22
+!s107 C:/Users/rojo/Documents/Quartus/LA5/src/sign_extend_half.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/rojo/Documents/Quartus/LA5/src|C:/Users/rojo/Documents/Quartus/LA5/src/sign_extend_half.v|
+!i113 1
+R7
+R12
+R9
+n@sign@extend@half
+vStoreType
+R21
+!i10b 1
+!s100 zY6m_Jm8eO>JFb`]OEG9<0
+R2
+I^S5RWC8CPS?KCB4E^Ol4L3
+R3
+R0
+w1773250863
+8C:/Users/rojo/Documents/Quartus/LA5/src/store_type.v
+FC:/Users/rojo/Documents/Quartus/LA5/src/store_type.v
+!i122 3
+L0 1 11
+R5
+r1
+!s85 0
+31
+R22
+!s107 C:/Users/rojo/Documents/Quartus/LA5/src/store_type.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/rojo/Documents/Quartus/LA5/src|C:/Users/rojo/Documents/Quartus/LA5/src/store_type.v|
+!i113 1
+R7
+R12
+R9
+n@store@type
+vt_counter
+R13
+!i10b 1
+!s100 g^XQ<QoliSjA5T<;oo_7Y2
+R2
+I9zb=Q>XoaV^W2hGQN5P9K3
+R3
+R0
+w1772036973
+8C:/Users/rojo/Documents/Quartus/LA5/src/counter.v
+FC:/Users/rojo/Documents/Quartus/LA5/src/counter.v
+!i122 19
+L0 1 34
+R5
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/rojo/Documents/Quartus/LA5/src/counter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/rojo/Documents/Quartus/LA5/src|C:/Users/rojo/Documents/Quartus/LA5/src/counter.v|
+!i113 1
+R7
+R12
+R9
+vtestbench
+R1
+!i10b 1
+!s100 k=KXP?:H[?=Oe^7SKCPg42
+R2
+I@liz?T1e6KF6g0Rmn[]hb0
+R3
+R0
+w1773260172
+8C:/Users/rojo/Documents/Quartus/LA5/testbench/RISCV_tb.v
+FC:/Users/rojo/Documents/Quartus/LA5/testbench/RISCV_tb.v
+!i122 40
+L0 3 47
+R5
+r1
+!s85 0
+31
+!s108 1775968413.000000
+!s107 C:/Users/rojo/Documents/Quartus/LA5/testbench/RISCV_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/rojo/Documents/Quartus/LA5/testbench|C:/Users/rojo/Documents/Quartus/LA5/testbench/RISCV_tb.v|
+!i113 1
+R7
+R8
+R9
+vWriteData
+R21
+!i10b 1
+!s100 [^DFBE7RkBk:`3AkF:`D82
+R2
+IO<cL]d7KEBEJ6NGS48JV`3
+R3
+R0
+w1773257453
+8C:/Users/rojo/Documents/Quartus/LA5/src/write_data.v
+FC:/Users/rojo/Documents/Quartus/LA5/src/write_data.v
+!i122 2
+L0 1 61
+R5
+r1
+!s85 0
+31
+R22
+!s107 C:/Users/rojo/Documents/Quartus/LA5/src/write_data.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/rojo/Documents/Quartus/LA5/src|C:/Users/rojo/Documents/Quartus/LA5/src/write_data.v|
+!i113 1
+R7
+R12
+R9
+n@write@data
+vZeroExtendByte
+R21
+!i10b 1
+!s100 dhTZ[dje]D9jQOkUb;d0<3
+R2
+IEQi=<O0PnhMIaBOCW]YEF3
+R3
+R0
+w1773249804
+8C:/Users/rojo/Documents/Quartus/LA5/src/zero_extend_byte.v
+FC:/Users/rojo/Documents/Quartus/LA5/src/zero_extend_byte.v
+!i122 1
+R23
+R5
+r1
+!s85 0
+31
+Z24 !s108 1775968299.000000
+!s107 C:/Users/rojo/Documents/Quartus/LA5/src/zero_extend_byte.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/rojo/Documents/Quartus/LA5/src|C:/Users/rojo/Documents/Quartus/LA5/src/zero_extend_byte.v|
+!i113 1
+R7
+R12
+R9
+n@zero@extend@byte
+vZeroExtendHalf
+!s110 1775968299
+!i10b 1
+!s100 <7?7=F;_Ij]?8m[<=V:650
+R2
+IZIUh4XbMm<:]h5_NRfCd<2
+R3
+R0
+w1773249830
+8C:/Users/rojo/Documents/Quartus/LA5/src/zero_extend_half.v
+FC:/Users/rojo/Documents/Quartus/LA5/src/zero_extend_half.v
+!i122 0
+R23
+R5
+r1
+!s85 0
+31
+R24
+!s107 C:/Users/rojo/Documents/Quartus/LA5/src/zero_extend_half.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/rojo/Documents/Quartus/LA5/src|C:/Users/rojo/Documents/Quartus/LA5/src/zero_extend_half.v|
+!i113 1
+R7
+R12
+R9
+n@zero@extend@half

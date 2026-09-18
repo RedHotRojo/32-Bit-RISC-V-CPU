@@ -1,0 +1,820 @@
+Analysis & Synthesis report for cpu
+Sun Apr 12 00:31:10 2026
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Parameter Settings for User Entity Instance: datapath:b2v_datapath_0|register_n:b2v_A_register
+ 12. Parameter Settings for User Entity Instance: datapath:b2v_datapath_0|mux3:b2v_ALUMux
+ 13. Parameter Settings for User Entity Instance: datapath:b2v_datapath_0|mux3:b2v_ALUMux|mux2:mux2_0
+ 14. Parameter Settings for User Entity Instance: datapath:b2v_datapath_0|mux3:b2v_ALUMux|mux2:mux2_out
+ 15. Parameter Settings for User Entity Instance: datapath:b2v_datapath_0|register_n:b2v_ALUOut_register
+ 16. Parameter Settings for User Entity Instance: datapath:b2v_datapath_0|register_n:b2v_B_register
+ 17. Parameter Settings for User Entity Instance: datapath:b2v_datapath_0|mux2:b2v_InstrDataMemoryMux
+ 18. Parameter Settings for User Entity Instance: datapath:b2v_datapath_0|register_n:b2v_IR
+ 19. Parameter Settings for User Entity Instance: datapath:b2v_datapath_0|register_n:b2v_OldPC_register
+ 20. Parameter Settings for User Entity Instance: datapath:b2v_datapath_0|register_n:b2v_PC_register
+ 21. Parameter Settings for User Entity Instance: datapath:b2v_datapath_0|constant_32bit:b2v_PCIncrement
+ 22. Parameter Settings for User Entity Instance: datapath:b2v_datapath_0|register_n:b2v_Data_register
+ 23. Parameter Settings for User Entity Instance: datapath:b2v_datapath_0|mux4:b2v_SrcAMux
+ 24. Parameter Settings for User Entity Instance: datapath:b2v_datapath_0|mux3:b2v_SrcBMux
+ 25. Parameter Settings for User Entity Instance: datapath:b2v_datapath_0|mux3:b2v_SrcBMux|mux2:mux2_0
+ 26. Parameter Settings for User Entity Instance: datapath:b2v_datapath_0|mux3:b2v_SrcBMux|mux2:mux2_out
+ 27. Parameter Settings for User Entity Instance: datapath:b2v_datapath_0|ReadData:b2v_read_data_0|mux4:byte_mux
+ 28. Parameter Settings for User Entity Instance: datapath:b2v_datapath_0|ReadData:b2v_read_data_0|mux2:half_mux
+ 29. Parameter Settings for User Entity Instance: datapath:b2v_datapath_0|ReadData:b2v_read_data_0|mux2:read_or_zero_byte_mux
+ 30. Parameter Settings for User Entity Instance: datapath:b2v_datapath_0|ReadData:b2v_read_data_0|mux2:or_sign_byte_mux
+ 31. Parameter Settings for User Entity Instance: datapath:b2v_datapath_0|ReadData:b2v_read_data_0|mux2:zero_or_sign_half_mux
+ 32. Parameter Settings for User Entity Instance: datapath:b2v_datapath_0|ReadData:b2v_read_data_0|mux2:final_mux
+ 33. Parameter Settings for User Entity Instance: datapath:b2v_datapath_0|WriteData:b2v_write_data_0|mux4:byte_mux
+ 34. Parameter Settings for User Entity Instance: datapath:b2v_datapath_0|WriteData:b2v_write_data_0|mux2:byte_or_word_mux
+ 35. Parameter Settings for User Entity Instance: datapath:b2v_datapath_0|WriteData:b2v_write_data_0|mux2:half_word_mux
+ 36. Parameter Settings for User Entity Instance: datapath:b2v_datapath_0|WriteData:b2v_write_data_0|mux2:half_or_byte_mux
+ 37. Port Connectivity Checks: "datapath:b2v_datapath_0|mux4:b2v_SrcAMux"
+ 38. Post-Synthesis Netlist Statistics for Top Partition
+ 39. Elapsed Time Per Partition
+ 40. Analysis & Synthesis Messages
+ 41. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Sun Apr 12 00:31:10 2026       ;
+; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
+; Revision Name                   ; cpu                                         ;
+; Top-level Entity Name           ; cpu                                         ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 1219                                        ;
+; Total pins                      ; 99                                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                             ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CGXFC7C7F23C8     ;                    ;
+; Top-level entity name                                                           ; cpu                ; cpu                ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 6           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 6           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processor 3            ;   0.0%      ;
+;     Processor 4            ;   0.0%      ;
+;     Processor 5            ;   0.0%      ;
+;     Processor 6            ;   0.0%      ;
++----------------------------+-------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                  ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                    ; Library ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------------------+---------+
+; src/zero_extend_half.v           ; yes             ; User Verilog HDL File  ; C:/Users/rojo/Documents/Quartus/LA5/src/zero_extend_half.v      ;         ;
+; src/zero_extend_byte.v           ; yes             ; User Verilog HDL File  ; C:/Users/rojo/Documents/Quartus/LA5/src/zero_extend_byte.v      ;         ;
+; src/write_data.v                 ; yes             ; User Verilog HDL File  ; C:/Users/rojo/Documents/Quartus/LA5/src/write_data.v            ;         ;
+; src/store_type.v                 ; yes             ; User Verilog HDL File  ; C:/Users/rojo/Documents/Quartus/LA5/src/store_type.v            ;         ;
+; src/sign_extend_half.v           ; yes             ; User Verilog HDL File  ; C:/Users/rojo/Documents/Quartus/LA5/src/sign_extend_half.v      ;         ;
+; src/sign_extend_byte.v           ; yes             ; User Verilog HDL File  ; C:/Users/rojo/Documents/Quartus/LA5/src/sign_extend_byte.v      ;         ;
+; src/register_n.v                 ; yes             ; User Verilog HDL File  ; C:/Users/rojo/Documents/Quartus/LA5/src/register_n.v            ;         ;
+; src/register_file.v              ; yes             ; User Verilog HDL File  ; C:/Users/rojo/Documents/Quartus/LA5/src/register_file.v         ;         ;
+; src/read_data.v                  ; yes             ; User Verilog HDL File  ; C:/Users/rojo/Documents/Quartus/LA5/src/read_data.v             ;         ;
+; src/mux4.v                       ; yes             ; User Verilog HDL File  ; C:/Users/rojo/Documents/Quartus/LA5/src/mux4.v                  ;         ;
+; src/mux3.v                       ; yes             ; User Verilog HDL File  ; C:/Users/rojo/Documents/Quartus/LA5/src/mux3.v                  ;         ;
+; src/mux2.v                       ; yes             ; User Verilog HDL File  ; C:/Users/rojo/Documents/Quartus/LA5/src/mux2.v                  ;         ;
+; src/main_fsm.v                   ; yes             ; User Verilog HDL File  ; C:/Users/rojo/Documents/Quartus/LA5/src/main_fsm.v              ;         ;
+; src/load_type.v                  ; yes             ; User Verilog HDL File  ; C:/Users/rojo/Documents/Quartus/LA5/src/load_type.v             ;         ;
+; src/instruction_decoder.v        ; yes             ; User Verilog HDL File  ; C:/Users/rojo/Documents/Quartus/LA5/src/instruction_decoder.v   ;         ;
+; src/imm_source_decode.v          ; yes             ; User Verilog HDL File  ; C:/Users/rojo/Documents/Quartus/LA5/src/imm_source_decode.v     ;         ;
+; src/extend_immediate.v           ; yes             ; User Verilog HDL File  ; C:/Users/rojo/Documents/Quartus/LA5/src/extend_immediate.v      ;         ;
+; src/datapath.v                   ; yes             ; User Verilog HDL File  ; C:/Users/rojo/Documents/Quartus/LA5/src/datapath.v              ;         ;
+; src/cpu.v                        ; yes             ; User Verilog HDL File  ; C:/Users/rojo/Documents/Quartus/LA5/src/cpu.v                   ;         ;
+; src/counter.v                    ; yes             ; User Verilog HDL File  ; C:/Users/rojo/Documents/Quartus/LA5/src/counter.v               ;         ;
+; src/controller.v                 ; yes             ; User Verilog HDL File  ; C:/Users/rojo/Documents/Quartus/LA5/src/controller.v            ;         ;
+; src/control_signals_logic.v      ; yes             ; User Verilog HDL File  ; C:/Users/rojo/Documents/Quartus/LA5/src/control_signals_logic.v ;         ;
+; src/constant_32bit.v             ; yes             ; User Verilog HDL File  ; C:/Users/rojo/Documents/Quartus/LA5/src/constant_32bit.v        ;         ;
+; src/branch_unit.v                ; yes             ; User Verilog HDL File  ; C:/Users/rojo/Documents/Quartus/LA5/src/branch_unit.v           ;         ;
+; src/alu_decoder.v                ; yes             ; User Verilog HDL File  ; C:/Users/rojo/Documents/Quartus/LA5/src/alu_decoder.v           ;         ;
+; src/alu.v                        ; yes             ; User Verilog HDL File  ; C:/Users/rojo/Documents/Quartus/LA5/src/alu.v                   ;         ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++---------------------------------------------+-------------+
+; Resource                                    ; Usage       ;
++---------------------------------------------+-------------+
+; Estimate of Logic utilization (ALMs needed) ; 1270        ;
+;                                             ;             ;
+; Combinational ALUT usage for logic          ; 1431        ;
+;     -- 7 input functions                    ; 14          ;
+;     -- 6 input functions                    ; 892         ;
+;     -- 5 input functions                    ; 226         ;
+;     -- 4 input functions                    ; 82          ;
+;     -- <=3 input functions                  ; 217         ;
+;                                             ;             ;
+; Dedicated logic registers                   ; 1219        ;
+;                                             ;             ;
+; I/O pins                                    ; 99          ;
+;                                             ;             ;
+; Total DSP Blocks                            ; 0           ;
+;                                             ;             ;
+; Maximum fan-out node                        ; clock~input ;
+; Maximum fan-out                             ; 1219        ;
+; Total fan-out                               ; 12475       ;
+; Average fan-out                             ; 4.38        ;
++---------------------------------------------+-------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                               ;
++----------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------------+-----------------------+--------------+
+; Compilation Hierarchy Node                               ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                    ; Entity Name           ; Library Name ;
++----------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------------+-----------------------+--------------+
+; |cpu                                                     ; 1431 (0)            ; 1219 (0)                  ; 0                 ; 0          ; 99   ; 0            ; |cpu                                                                                                   ; cpu                   ; work         ;
+;    |controller:b2v_controller_0|                         ; 57 (6)              ; 3 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |cpu|controller:b2v_controller_0                                                                       ; controller            ; work         ;
+;       |StoreType:b2v_store_type_0|                       ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |cpu|controller:b2v_controller_0|StoreType:b2v_store_type_0                                            ; StoreType             ; work         ;
+;       |alu_decoder:b2v_ALU_decoder_0|                    ; 14 (14)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |cpu|controller:b2v_controller_0|alu_decoder:b2v_ALU_decoder_0                                         ; alu_decoder           ; work         ;
+;       |imm_source_decode:b2v_imm_src_decoder_0|          ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |cpu|controller:b2v_controller_0|imm_source_decode:b2v_imm_src_decoder_0                               ; imm_source_decode     ; work         ;
+;       |main_fsm:b2v_main_fsm_0|                          ; 27 (2)              ; 3 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |cpu|controller:b2v_controller_0|main_fsm:b2v_main_fsm_0                                               ; main_fsm              ; work         ;
+;          |control_signals_logic:b2v_control_signals|     ; 11 (11)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |cpu|controller:b2v_controller_0|main_fsm:b2v_main_fsm_0|control_signals_logic:b2v_control_signals     ; control_signals_logic ; work         ;
+;          |instruction_decoder:b2v_instruction_decoder_0| ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |cpu|controller:b2v_controller_0|main_fsm:b2v_main_fsm_0|instruction_decoder:b2v_instruction_decoder_0 ; instruction_decoder   ; work         ;
+;          |t_counter:b2v_sequencer|                       ; 7 (7)               ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |cpu|controller:b2v_controller_0|main_fsm:b2v_main_fsm_0|t_counter:b2v_sequencer                       ; t_counter             ; work         ;
+;    |datapath:b2v_datapath_0|                             ; 1374 (0)            ; 1216 (0)                  ; 0                 ; 0          ; 0    ; 0            ; |cpu|datapath:b2v_datapath_0                                                                           ; datapath              ; work         ;
+;       |ReadData:b2v_read_data_0|                         ; 46 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |cpu|datapath:b2v_datapath_0|ReadData:b2v_read_data_0                                                  ; ReadData              ; work         ;
+;          |mux2:final_mux|                                ; 41 (41)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |cpu|datapath:b2v_datapath_0|ReadData:b2v_read_data_0|mux2:final_mux                                   ; mux2                  ; work         ;
+;          |mux2:half_mux|                                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |cpu|datapath:b2v_datapath_0|ReadData:b2v_read_data_0|mux2:half_mux                                    ; mux2                  ; work         ;
+;          |mux4:byte_mux|                                 ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |cpu|datapath:b2v_datapath_0|ReadData:b2v_read_data_0|mux4:byte_mux                                    ; mux4                  ; work         ;
+;       |WriteData:b2v_write_data_0|                       ; 37 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |cpu|datapath:b2v_datapath_0|WriteData:b2v_write_data_0                                                ; WriteData             ; work         ;
+;          |mux2:byte_or_word_mux|                         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |cpu|datapath:b2v_datapath_0|WriteData:b2v_write_data_0|mux2:byte_or_word_mux                          ; mux2                  ; work         ;
+;          |mux2:half_or_byte_mux|                         ; 36 (36)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |cpu|datapath:b2v_datapath_0|WriteData:b2v_write_data_0|mux2:half_or_byte_mux                          ; mux2                  ; work         ;
+;       |alu:b2v_ALU_0|                                    ; 379 (379)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |cpu|datapath:b2v_datapath_0|alu:b2v_ALU_0                                                             ; alu                   ; work         ;
+;       |mux2:b2v_InstrDataMemoryMux|                      ; 34 (34)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |cpu|datapath:b2v_datapath_0|mux2:b2v_InstrDataMemoryMux                                               ; mux2                  ; work         ;
+;       |mux3:b2v_ALUMux|                                  ; 56 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |cpu|datapath:b2v_datapath_0|mux3:b2v_ALUMux                                                           ; mux3                  ; work         ;
+;          |mux2:mux2_out|                                 ; 56 (56)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |cpu|datapath:b2v_datapath_0|mux3:b2v_ALUMux|mux2:mux2_out                                             ; mux2                  ; work         ;
+;       |mux3:b2v_SrcBMux|                                 ; 44 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |cpu|datapath:b2v_datapath_0|mux3:b2v_SrcBMux                                                          ; mux3                  ; work         ;
+;          |mux2:mux2_0|                                   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |cpu|datapath:b2v_datapath_0|mux3:b2v_SrcBMux|mux2:mux2_0                                              ; mux2                  ; work         ;
+;          |mux2:mux2_out|                                 ; 43 (43)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |cpu|datapath:b2v_datapath_0|mux3:b2v_SrcBMux|mux2:mux2_out                                            ; mux2                  ; work         ;
+;       |mux4:b2v_SrcAMux|                                 ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |cpu|datapath:b2v_datapath_0|mux4:b2v_SrcAMux                                                          ; mux4                  ; work         ;
+;       |register_file:b2v_rf_0|                           ; 743 (743)           ; 992 (992)                 ; 0                 ; 0          ; 0    ; 0            ; |cpu|datapath:b2v_datapath_0|register_file:b2v_rf_0                                                    ; register_file         ; work         ;
+;       |register_n:b2v_ALUOut_register|                   ; 0 (0)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |cpu|datapath:b2v_datapath_0|register_n:b2v_ALUOut_register                                            ; register_n            ; work         ;
+;       |register_n:b2v_A_register|                        ; 0 (0)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |cpu|datapath:b2v_datapath_0|register_n:b2v_A_register                                                 ; register_n            ; work         ;
+;       |register_n:b2v_B_register|                        ; 0 (0)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |cpu|datapath:b2v_datapath_0|register_n:b2v_B_register                                                 ; register_n            ; work         ;
+;       |register_n:b2v_Data_register|                     ; 3 (3)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |cpu|datapath:b2v_datapath_0|register_n:b2v_Data_register                                              ; register_n            ; work         ;
+;       |register_n:b2v_IR|                                ; 0 (0)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |cpu|datapath:b2v_datapath_0|register_n:b2v_IR                                                         ; register_n            ; work         ;
+;       |register_n:b2v_OldPC_register|                    ; 0 (0)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |cpu|datapath:b2v_datapath_0|register_n:b2v_OldPC_register                                             ; register_n            ; work         ;
+;       |register_n:b2v_PC_register|                       ; 0 (0)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |cpu|datapath:b2v_datapath_0|register_n:b2v_PC_register                                                ; register_n            ; work         ;
++----------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------------+-----------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                    ;
++---------------------------------------------------------+---------------------------------------------+
+; Register name                                           ; Reason for Removal                          ;
++---------------------------------------------------------+---------------------------------------------+
+; datapath:b2v_datapath_0|register_file:b2v_rf_0|Q[0][0]  ; Stuck at GND due to stuck port clock_enable ;
+; datapath:b2v_datapath_0|register_file:b2v_rf_0|Q[0][1]  ; Stuck at GND due to stuck port clock_enable ;
+; datapath:b2v_datapath_0|register_file:b2v_rf_0|Q[0][2]  ; Stuck at GND due to stuck port clock_enable ;
+; datapath:b2v_datapath_0|register_file:b2v_rf_0|Q[0][3]  ; Stuck at GND due to stuck port clock_enable ;
+; datapath:b2v_datapath_0|register_file:b2v_rf_0|Q[0][4]  ; Stuck at GND due to stuck port clock_enable ;
+; datapath:b2v_datapath_0|register_file:b2v_rf_0|Q[0][5]  ; Stuck at GND due to stuck port clock_enable ;
+; datapath:b2v_datapath_0|register_file:b2v_rf_0|Q[0][6]  ; Stuck at GND due to stuck port clock_enable ;
+; datapath:b2v_datapath_0|register_file:b2v_rf_0|Q[0][7]  ; Stuck at GND due to stuck port clock_enable ;
+; datapath:b2v_datapath_0|register_file:b2v_rf_0|Q[0][8]  ; Stuck at GND due to stuck port clock_enable ;
+; datapath:b2v_datapath_0|register_file:b2v_rf_0|Q[0][9]  ; Stuck at GND due to stuck port clock_enable ;
+; datapath:b2v_datapath_0|register_file:b2v_rf_0|Q[0][10] ; Stuck at GND due to stuck port clock_enable ;
+; datapath:b2v_datapath_0|register_file:b2v_rf_0|Q[0][11] ; Stuck at GND due to stuck port clock_enable ;
+; datapath:b2v_datapath_0|register_file:b2v_rf_0|Q[0][12] ; Stuck at GND due to stuck port clock_enable ;
+; datapath:b2v_datapath_0|register_file:b2v_rf_0|Q[0][13] ; Stuck at GND due to stuck port clock_enable ;
+; datapath:b2v_datapath_0|register_file:b2v_rf_0|Q[0][14] ; Stuck at GND due to stuck port clock_enable ;
+; datapath:b2v_datapath_0|register_file:b2v_rf_0|Q[0][15] ; Stuck at GND due to stuck port clock_enable ;
+; datapath:b2v_datapath_0|register_file:b2v_rf_0|Q[0][16] ; Stuck at GND due to stuck port clock_enable ;
+; datapath:b2v_datapath_0|register_file:b2v_rf_0|Q[0][17] ; Stuck at GND due to stuck port clock_enable ;
+; datapath:b2v_datapath_0|register_file:b2v_rf_0|Q[0][18] ; Stuck at GND due to stuck port clock_enable ;
+; datapath:b2v_datapath_0|register_file:b2v_rf_0|Q[0][19] ; Stuck at GND due to stuck port clock_enable ;
+; datapath:b2v_datapath_0|register_file:b2v_rf_0|Q[0][20] ; Stuck at GND due to stuck port clock_enable ;
+; datapath:b2v_datapath_0|register_file:b2v_rf_0|Q[0][21] ; Stuck at GND due to stuck port clock_enable ;
+; datapath:b2v_datapath_0|register_file:b2v_rf_0|Q[0][22] ; Stuck at GND due to stuck port clock_enable ;
+; datapath:b2v_datapath_0|register_file:b2v_rf_0|Q[0][23] ; Stuck at GND due to stuck port clock_enable ;
+; datapath:b2v_datapath_0|register_file:b2v_rf_0|Q[0][24] ; Stuck at GND due to stuck port clock_enable ;
+; datapath:b2v_datapath_0|register_file:b2v_rf_0|Q[0][25] ; Stuck at GND due to stuck port clock_enable ;
+; datapath:b2v_datapath_0|register_file:b2v_rf_0|Q[0][26] ; Stuck at GND due to stuck port clock_enable ;
+; datapath:b2v_datapath_0|register_file:b2v_rf_0|Q[0][27] ; Stuck at GND due to stuck port clock_enable ;
+; datapath:b2v_datapath_0|register_file:b2v_rf_0|Q[0][28] ; Stuck at GND due to stuck port clock_enable ;
+; datapath:b2v_datapath_0|register_file:b2v_rf_0|Q[0][29] ; Stuck at GND due to stuck port clock_enable ;
+; datapath:b2v_datapath_0|register_file:b2v_rf_0|Q[0][30] ; Stuck at GND due to stuck port clock_enable ;
+; datapath:b2v_datapath_0|register_file:b2v_rf_0|Q[0][31] ; Stuck at GND due to stuck port clock_enable ;
+; Total Number of Removed Registers = 32                  ;                                             ;
++---------------------------------------------------------+---------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 1219  ;
+; Number of registers using Synchronous Clear  ; 17    ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 1219  ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 1088  ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------+
+; 4:1                ; 17 bits   ; 34 LEs        ; 34 LEs               ; 0 LEs                  ; Yes        ; |cpu|datapath:b2v_datapath_0|register_n:b2v_Data_register|Q[20]                        ;
+; 5:1                ; 7 bits    ; 21 LEs        ; 14 LEs               ; 7 LEs                  ; Yes        ; |cpu|datapath:b2v_datapath_0|register_n:b2v_Data_register|Q[8]                         ;
+; 32:1               ; 32 bits   ; 672 LEs       ; 672 LEs              ; 0 LEs                  ; Yes        ; |cpu|datapath:b2v_datapath_0|register_n:b2v_A_register|Q[4]                            ;
+; 7:1                ; 7 bits    ; 28 LEs        ; 14 LEs               ; 14 LEs                 ; Yes        ; |cpu|datapath:b2v_datapath_0|register_n:b2v_Data_register|Q[6]                         ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |cpu|datapath:b2v_datapath_0|mux3:b2v_ALUMux|mux2:mux2_out|y[22]                       ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |cpu|datapath:b2v_datapath_0|alu:b2v_ALU_0|ShiftLeft0                                  ;
+; 4:1                ; 49 bits   ; 98 LEs        ; 98 LEs               ; 0 LEs                  ; No         ; |cpu|datapath:b2v_datapath_0|alu:b2v_ALU_0|ShiftLeft0                                  ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |cpu|datapath:b2v_datapath_0|alu:b2v_ALU_0|ShiftLeft0                                  ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |cpu|datapath:b2v_datapath_0|alu:b2v_ALU_0|ShiftLeft0                                  ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |cpu|datapath:b2v_datapath_0|alu:b2v_ALU_0|ShiftLeft0                                  ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |cpu|datapath:b2v_datapath_0|alu:b2v_ALU_0|ShiftRight0                                 ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |cpu|datapath:b2v_datapath_0|alu:b2v_ALU_0|ShiftRight1                                 ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; No         ; |cpu|datapath:b2v_datapath_0|WriteData:b2v_write_data_0|mux2:half_or_byte_mux|y[0]     ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |cpu|controller:b2v_controller_0|imm_source_decode:b2v_imm_src_decoder_0|imm_source[0] ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |cpu|datapath:b2v_datapath_0|mux4:b2v_SrcAMux|y[26]                                    ;
+; 4:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |cpu|datapath:b2v_datapath_0|mux3:b2v_SrcBMux|mux2:mux2_out|y[6]                       ;
+; 4:1                ; 11 bits   ; 22 LEs        ; 22 LEs               ; 0 LEs                  ; No         ; |cpu|datapath:b2v_datapath_0|mux3:b2v_SrcBMux|mux2:mux2_out|y[25]                      ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |cpu|datapath:b2v_datapath_0|WriteData:b2v_write_data_0|mux2:half_or_byte_mux|y[10]    ;
+; 5:1                ; 8 bits    ; 24 LEs        ; 16 LEs               ; 8 LEs                  ; No         ; |cpu|datapath:b2v_datapath_0|WriteData:b2v_write_data_0|mux2:half_or_byte_mux|y[23]    ;
+; 5:1                ; 8 bits    ; 24 LEs        ; 16 LEs               ; 8 LEs                  ; No         ; |cpu|datapath:b2v_datapath_0|WriteData:b2v_write_data_0|mux2:half_or_byte_mux|y[26]    ;
+; 32:1               ; 32 bits   ; 672 LEs       ; 672 LEs              ; 0 LEs                  ; No         ; |cpu|datapath:b2v_datapath_0|register_file:b2v_rf_0|Mux52                              ;
+; 7:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |cpu|controller:b2v_controller_0|alu_decoder:b2v_ALU_decoder_0|alu_ctrl[2]             ;
+; 6:1                ; 8 bits    ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; No         ; |cpu|datapath:b2v_datapath_0|mux3:b2v_SrcBMux|mux2:mux2_out|y[12]                      ;
+; 7:1                ; 4 bits    ; 16 LEs        ; 12 LEs               ; 4 LEs                  ; No         ; |cpu|datapath:b2v_datapath_0|mux3:b2v_SrcBMux|mux2:mux2_out|y[3]                       ;
+; 16:1               ; 8 bits    ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; No         ; |cpu|datapath:b2v_datapath_0|alu:b2v_ALU_0|Mux7                                        ;
+; 15:1               ; 5 bits    ; 50 LEs        ; 45 LEs               ; 5 LEs                  ; No         ; |cpu|datapath:b2v_datapath_0|alu:b2v_ALU_0|Mux23                                       ;
+; 17:1               ; 2 bits    ; 22 LEs        ; 20 LEs               ; 2 LEs                  ; No         ; |cpu|datapath:b2v_datapath_0|alu:b2v_ALU_0|Mux22                                       ;
+; 15:1               ; 3 bits    ; 30 LEs        ; 27 LEs               ; 3 LEs                  ; No         ; |cpu|datapath:b2v_datapath_0|alu:b2v_ALU_0|Mux19                                       ;
+; 19:1               ; 3 bits    ; 36 LEs        ; 36 LEs               ; 0 LEs                  ; No         ; |cpu|datapath:b2v_datapath_0|alu:b2v_ALU_0|Mux2                                        ;
+; 18:1               ; 2 bits    ; 24 LEs        ; 20 LEs               ; 4 LEs                  ; No         ; |cpu|datapath:b2v_datapath_0|alu:b2v_ALU_0|Mux5                                        ;
+; 18:1               ; 3 bits    ; 36 LEs        ; 33 LEs               ; 3 LEs                  ; No         ; |cpu|datapath:b2v_datapath_0|alu:b2v_ALU_0|Mux28                                       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:b2v_datapath_0|register_n:b2v_A_register ;
++----------------+-------+-----------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                  ;
++----------------+-------+-----------------------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                                        ;
++----------------+-------+-----------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:b2v_datapath_0|mux3:b2v_ALUMux ;
++----------------+-------+-------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                        ;
++----------------+-------+-------------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                              ;
++----------------+-------+-------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:b2v_datapath_0|mux3:b2v_ALUMux|mux2:mux2_0 ;
++----------------+-------+-------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                    ;
++----------------+-------+-------------------------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                                          ;
++----------------+-------+-------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:b2v_datapath_0|mux3:b2v_ALUMux|mux2:mux2_out ;
++----------------+-------+---------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                      ;
++----------------+-------+---------------------------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                                            ;
++----------------+-------+---------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:b2v_datapath_0|register_n:b2v_ALUOut_register ;
++----------------+-------+----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                       ;
++----------------+-------+----------------------------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                                             ;
++----------------+-------+----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:b2v_datapath_0|register_n:b2v_B_register ;
++----------------+-------+-----------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                  ;
++----------------+-------+-----------------------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                                        ;
++----------------+-------+-----------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:b2v_datapath_0|mux2:b2v_InstrDataMemoryMux ;
++----------------+-------+-------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                    ;
++----------------+-------+-------------------------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                                          ;
++----------------+-------+-------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:b2v_datapath_0|register_n:b2v_IR ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                                ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:b2v_datapath_0|register_n:b2v_OldPC_register ;
++----------------+-------+---------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                      ;
++----------------+-------+---------------------------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                                            ;
++----------------+-------+---------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:b2v_datapath_0|register_n:b2v_PC_register ;
++----------------+-------+------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                   ;
++----------------+-------+------------------------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                                         ;
++----------------+-------+------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:b2v_datapath_0|constant_32bit:b2v_PCIncrement ;
++----------------+-------+----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                       ;
++----------------+-------+----------------------------------------------------------------------------+
+; value          ; 4     ; Signed Integer                                                             ;
++----------------+-------+----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:b2v_datapath_0|register_n:b2v_Data_register ;
++----------------+-------+--------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                     ;
++----------------+-------+--------------------------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                                           ;
++----------------+-------+--------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:b2v_datapath_0|mux4:b2v_SrcAMux ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                               ;
++----------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:b2v_datapath_0|mux3:b2v_SrcBMux ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                               ;
++----------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:b2v_datapath_0|mux3:b2v_SrcBMux|mux2:mux2_0 ;
++----------------+-------+--------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                     ;
++----------------+-------+--------------------------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                                           ;
++----------------+-------+--------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:b2v_datapath_0|mux3:b2v_SrcBMux|mux2:mux2_out ;
++----------------+-------+----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                       ;
++----------------+-------+----------------------------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                                             ;
++----------------+-------+----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:b2v_datapath_0|ReadData:b2v_read_data_0|mux4:byte_mux ;
++----------------+-------+------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                               ;
++----------------+-------+------------------------------------------------------------------------------------+
+; WIDTH          ; 8     ; Signed Integer                                                                     ;
++----------------+-------+------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:b2v_datapath_0|ReadData:b2v_read_data_0|mux2:half_mux ;
++----------------+-------+------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                               ;
++----------------+-------+------------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                                     ;
++----------------+-------+------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:b2v_datapath_0|ReadData:b2v_read_data_0|mux2:read_or_zero_byte_mux ;
++----------------+-------+-------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                            ;
++----------------+-------+-------------------------------------------------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                                                                  ;
++----------------+-------+-------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:b2v_datapath_0|ReadData:b2v_read_data_0|mux2:or_sign_byte_mux ;
++----------------+-------+--------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                       ;
++----------------+-------+--------------------------------------------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                                                             ;
++----------------+-------+--------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:b2v_datapath_0|ReadData:b2v_read_data_0|mux2:zero_or_sign_half_mux ;
++----------------+-------+-------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                            ;
++----------------+-------+-------------------------------------------------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                                                                  ;
++----------------+-------+-------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:b2v_datapath_0|ReadData:b2v_read_data_0|mux2:final_mux ;
++----------------+-------+-------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                ;
++----------------+-------+-------------------------------------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                                                      ;
++----------------+-------+-------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:b2v_datapath_0|WriteData:b2v_write_data_0|mux4:byte_mux ;
++----------------+-------+--------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                 ;
++----------------+-------+--------------------------------------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                                                       ;
++----------------+-------+--------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:b2v_datapath_0|WriteData:b2v_write_data_0|mux2:byte_or_word_mux ;
++----------------+-------+----------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                                                               ;
++----------------+-------+----------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:b2v_datapath_0|WriteData:b2v_write_data_0|mux2:half_word_mux ;
++----------------+-------+-------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                      ;
++----------------+-------+-------------------------------------------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                                                            ;
++----------------+-------+-------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:b2v_datapath_0|WriteData:b2v_write_data_0|mux2:half_or_byte_mux ;
++----------------+-------+----------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                                                               ;
++----------------+-------+----------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------+
+; Port Connectivity Checks: "datapath:b2v_datapath_0|mux4:b2v_SrcAMux" ;
++------+-------+----------+--------------------------------------------+
+; Port ; Type  ; Severity ; Details                                    ;
++------+-------+----------+--------------------------------------------+
+; d3   ; Input ; Info     ; Stuck at GND                               ;
++------+-------+----------+--------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_ff             ; 1219                        ;
+;     CLR               ; 114                         ;
+;     CLR SCLR          ; 17                          ;
+;     ENA CLR           ; 1088                        ;
+; arriav_lcell_comb     ; 1431                        ;
+;     extend            ; 14                          ;
+;         7 data inputs ; 14                          ;
+;     normal            ; 1384                        ;
+;         2 data inputs ; 28                          ;
+;         3 data inputs ; 174                         ;
+;         4 data inputs ; 64                          ;
+;         5 data inputs ; 226                         ;
+;         6 data inputs ; 892                         ;
+;     shared            ; 33                          ;
+;         0 data inputs ; 1                           ;
+;         2 data inputs ; 11                          ;
+;         3 data inputs ; 3                           ;
+;         4 data inputs ; 18                          ;
+; boundary_port         ; 99                          ;
+;                       ;                             ;
+; Max LUT depth         ; 12.20                       ;
+; Average LUT depth     ; 5.73                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:04     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+    Info: Processing started: Sun Apr 12 00:30:58 2026
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off LA5 -c cpu
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file src/zero_extend_half.v
+    Info (12023): Found entity 1: ZeroExtendHalf File: C:/Users/rojo/Documents/Quartus/LA5/src/zero_extend_half.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file src/zero_extend_byte.v
+    Info (12023): Found entity 1: ZeroExtendByte File: C:/Users/rojo/Documents/Quartus/LA5/src/zero_extend_byte.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file src/write_data.v
+    Info (12023): Found entity 1: WriteData File: C:/Users/rojo/Documents/Quartus/LA5/src/write_data.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file src/store_type.v
+    Info (12023): Found entity 1: StoreType File: C:/Users/rojo/Documents/Quartus/LA5/src/store_type.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file src/sign_extend_half.v
+    Info (12023): Found entity 1: SignExtendHalf File: C:/Users/rojo/Documents/Quartus/LA5/src/sign_extend_half.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file src/sign_extend_byte.v
+    Info (12023): Found entity 1: SignExtendByte File: C:/Users/rojo/Documents/Quartus/LA5/src/sign_extend_byte.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file src/register_n.v
+    Info (12023): Found entity 1: register_n File: C:/Users/rojo/Documents/Quartus/LA5/src/register_n.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file src/register_file.v
+    Info (12023): Found entity 1: register_file File: C:/Users/rojo/Documents/Quartus/LA5/src/register_file.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file src/read_data.v
+    Info (12023): Found entity 1: ReadData File: C:/Users/rojo/Documents/Quartus/LA5/src/read_data.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file src/mux4.v
+    Info (12023): Found entity 1: mux4 File: C:/Users/rojo/Documents/Quartus/LA5/src/mux4.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file src/mux3.v
+    Info (12023): Found entity 1: mux3 File: C:/Users/rojo/Documents/Quartus/LA5/src/mux3.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file src/mux2.v
+    Info (12023): Found entity 1: mux2 File: C:/Users/rojo/Documents/Quartus/LA5/src/mux2.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file src/main_fsm.v
+    Info (12023): Found entity 1: main_fsm File: C:/Users/rojo/Documents/Quartus/LA5/src/main_fsm.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file src/load_type.v
+    Info (12023): Found entity 1: LoadType File: C:/Users/rojo/Documents/Quartus/LA5/src/load_type.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file src/instruction_decoder.v
+    Info (12023): Found entity 1: instruction_decoder File: C:/Users/rojo/Documents/Quartus/LA5/src/instruction_decoder.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file src/imm_source_decode.v
+    Info (12023): Found entity 1: imm_source_decode File: C:/Users/rojo/Documents/Quartus/LA5/src/imm_source_decode.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file src/extend_immediate.v
+    Info (12023): Found entity 1: extend_immediate File: C:/Users/rojo/Documents/Quartus/LA5/src/extend_immediate.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file src/datapath.v
+    Info (12023): Found entity 1: datapath File: C:/Users/rojo/Documents/Quartus/LA5/src/datapath.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file src/cpu.v
+    Info (12023): Found entity 1: cpu File: C:/Users/rojo/Documents/Quartus/LA5/src/cpu.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file src/counter.v
+    Info (12023): Found entity 1: t_counter File: C:/Users/rojo/Documents/Quartus/LA5/src/counter.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file src/controller.v
+    Info (12023): Found entity 1: controller File: C:/Users/rojo/Documents/Quartus/LA5/src/controller.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file src/control_signals_logic.v
+    Info (12023): Found entity 1: control_signals_logic File: C:/Users/rojo/Documents/Quartus/LA5/src/control_signals_logic.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file src/constant_32bit.v
+    Info (12023): Found entity 1: constant_32bit File: C:/Users/rojo/Documents/Quartus/LA5/src/constant_32bit.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file src/branch_unit.v
+    Info (12023): Found entity 1: branch_unit File: C:/Users/rojo/Documents/Quartus/LA5/src/branch_unit.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file src/alu_decoder.v
+    Info (12023): Found entity 1: alu_decoder File: C:/Users/rojo/Documents/Quartus/LA5/src/alu_decoder.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file src/alu.v
+    Info (12023): Found entity 1: alu File: C:/Users/rojo/Documents/Quartus/LA5/src/alu.v Line: 1
+Info (12127): Elaborating entity "cpu" for the top level hierarchy
+Info (12128): Elaborating entity "controller" for hierarchy "controller:b2v_controller_0" File: C:/Users/rojo/Documents/Quartus/LA5/src/cpu.v Line: 43
+Info (12128): Elaborating entity "alu_decoder" for hierarchy "controller:b2v_controller_0|alu_decoder:b2v_ALU_decoder_0" File: C:/Users/rojo/Documents/Quartus/LA5/src/controller.v Line: 33
+Info (12128): Elaborating entity "branch_unit" for hierarchy "controller:b2v_controller_0|branch_unit:b2v_branch_unit_0" File: C:/Users/rojo/Documents/Quartus/LA5/src/controller.v Line: 40
+Info (12128): Elaborating entity "imm_source_decode" for hierarchy "controller:b2v_controller_0|imm_source_decode:b2v_imm_src_decoder_0" File: C:/Users/rojo/Documents/Quartus/LA5/src/controller.v Line: 45
+Info (12128): Elaborating entity "main_fsm" for hierarchy "controller:b2v_controller_0|main_fsm:b2v_main_fsm_0" File: C:/Users/rojo/Documents/Quartus/LA5/src/controller.v Line: 61
+Info (12128): Elaborating entity "control_signals_logic" for hierarchy "controller:b2v_controller_0|main_fsm:b2v_main_fsm_0|control_signals_logic:b2v_control_signals" File: C:/Users/rojo/Documents/Quartus/LA5/src/main_fsm.v Line: 74
+Info (12128): Elaborating entity "instruction_decoder" for hierarchy "controller:b2v_controller_0|main_fsm:b2v_main_fsm_0|instruction_decoder:b2v_instruction_decoder_0" File: C:/Users/rojo/Documents/Quartus/LA5/src/main_fsm.v Line: 86
+Info (12128): Elaborating entity "t_counter" for hierarchy "controller:b2v_controller_0|main_fsm:b2v_main_fsm_0|t_counter:b2v_sequencer" File: C:/Users/rojo/Documents/Quartus/LA5/src/main_fsm.v Line: 98
+Info (12128): Elaborating entity "LoadType" for hierarchy "controller:b2v_controller_0|LoadType:b2v_load_type_0" File: C:/Users/rojo/Documents/Quartus/LA5/src/controller.v Line: 66
+Info (12128): Elaborating entity "StoreType" for hierarchy "controller:b2v_controller_0|StoreType:b2v_store_type_0" File: C:/Users/rojo/Documents/Quartus/LA5/src/controller.v Line: 71
+Info (12128): Elaborating entity "datapath" for hierarchy "datapath:b2v_datapath_0" File: C:/Users/rojo/Documents/Quartus/LA5/src/cpu.v Line: 65
+Info (12128): Elaborating entity "register_n" for hierarchy "datapath:b2v_datapath_0|register_n:b2v_A_register" File: C:/Users/rojo/Documents/Quartus/LA5/src/datapath.v Line: 50
+Info (12128): Elaborating entity "alu" for hierarchy "datapath:b2v_datapath_0|alu:b2v_ALU_0" File: C:/Users/rojo/Documents/Quartus/LA5/src/datapath.v Line: 59
+Info (12128): Elaborating entity "mux3" for hierarchy "datapath:b2v_datapath_0|mux3:b2v_ALUMux" File: C:/Users/rojo/Documents/Quartus/LA5/src/datapath.v Line: 67
+Info (12128): Elaborating entity "mux2" for hierarchy "datapath:b2v_datapath_0|mux3:b2v_ALUMux|mux2:mux2_0" File: C:/Users/rojo/Documents/Quartus/LA5/src/mux3.v Line: 13
+Info (12128): Elaborating entity "extend_immediate" for hierarchy "datapath:b2v_datapath_0|extend_immediate:b2v_extend_0" File: C:/Users/rojo/Documents/Quartus/LA5/src/datapath.v Line: 92
+Info (12128): Elaborating entity "constant_32bit" for hierarchy "datapath:b2v_datapath_0|constant_32bit:b2v_PCIncrement" File: C:/Users/rojo/Documents/Quartus/LA5/src/datapath.v Line: 130
+Info (12128): Elaborating entity "register_file" for hierarchy "datapath:b2v_datapath_0|register_file:b2v_rf_0" File: C:/Users/rojo/Documents/Quartus/LA5/src/datapath.v Line: 152
+Info (12128): Elaborating entity "mux4" for hierarchy "datapath:b2v_datapath_0|mux4:b2v_SrcAMux" File: C:/Users/rojo/Documents/Quartus/LA5/src/datapath.v Line: 161
+Info (12128): Elaborating entity "ReadData" for hierarchy "datapath:b2v_datapath_0|ReadData:b2v_read_data_0" File: C:/Users/rojo/Documents/Quartus/LA5/src/datapath.v Line: 178
+Info (12128): Elaborating entity "mux4" for hierarchy "datapath:b2v_datapath_0|ReadData:b2v_read_data_0|mux4:byte_mux" File: C:/Users/rojo/Documents/Quartus/LA5/src/read_data.v Line: 17
+Info (12128): Elaborating entity "mux2" for hierarchy "datapath:b2v_datapath_0|ReadData:b2v_read_data_0|mux2:half_mux" File: C:/Users/rojo/Documents/Quartus/LA5/src/read_data.v Line: 26
+Info (12128): Elaborating entity "ZeroExtendByte" for hierarchy "datapath:b2v_datapath_0|ReadData:b2v_read_data_0|ZeroExtendByte:zero_byte_ext" File: C:/Users/rojo/Documents/Quartus/LA5/src/read_data.v Line: 36
+Info (12128): Elaborating entity "SignExtendByte" for hierarchy "datapath:b2v_datapath_0|ReadData:b2v_read_data_0|SignExtendByte:sign_byte_ext" File: C:/Users/rojo/Documents/Quartus/LA5/src/read_data.v Line: 41
+Info (12128): Elaborating entity "ZeroExtendHalf" for hierarchy "datapath:b2v_datapath_0|ReadData:b2v_read_data_0|ZeroExtendHalf:zero_half_ext" File: C:/Users/rojo/Documents/Quartus/LA5/src/read_data.v Line: 46
+Info (12128): Elaborating entity "SignExtendHalf" for hierarchy "datapath:b2v_datapath_0|ReadData:b2v_read_data_0|SignExtendHalf:sign_half_ext" File: C:/Users/rojo/Documents/Quartus/LA5/src/read_data.v Line: 51
+Info (12128): Elaborating entity "WriteData" for hierarchy "datapath:b2v_datapath_0|WriteData:b2v_write_data_0" File: C:/Users/rojo/Documents/Quartus/LA5/src/datapath.v Line: 186
+Info (286030): Timing-Driven Synthesis is running
+Info (144001): Generated suppressed messages file C:/Users/rojo/Documents/Quartus/LA5/output_files/cpu.map.smsg
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 2668 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 34 input pins
+    Info (21059): Implemented 65 output pins
+    Info (21061): Implemented 2569 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4874 megabytes
+    Info: Processing ended: Sun Apr 12 00:31:10 2026
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:20
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/Users/rojo/Documents/Quartus/LA5/output_files/cpu.map.smsg.
+
+
